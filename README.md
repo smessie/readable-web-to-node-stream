@@ -10,15 +10,17 @@
 
 Converts a [Web-API readable stream](https://developer.mozilla.org/en-US/docs/Web/API/ReadableStreamDefaultReader) into a [Node.js readable stream](https://nodejs.org/api/stream.html#stream_readable_streams).
 
+This is a fork of the original [readable-web-to-node-stream](https://github.com/Borewit/readable-web-to-node-stream) with updated dependencies to use readable-stream@4.
+
 ## Installation
 Install via [npm](http://npmjs.org/):
 
 ```bash
-npm install readable-web-to-node-stream
+npm install @smessie/readable-web-to-node-stream
 ```
 or [yarn](https://yarnpkg.com/):
 ```bash
-yarn add readable-web-to-node-stream
+yarn add @smessie/readable-web-to-node-stream
 ```
 
 ## Compatibility
@@ -33,7 +35,7 @@ Unit tests are performed on the following browsers:
 
 Import readable-web-stream-to-node in JavaScript:
 ```js
-const {ReadableWebToNodeStream} = require('readable-web-to-node-stream');
+const {ReadableWebToNodeStream} = require('@smessie/readable-web-to-node-stream');
 
 async function download(url) {
     const response = await fetch(url);
